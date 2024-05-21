@@ -12,10 +12,9 @@ img {
 
 .conteiner{
     display: flex;
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center; /* Центрирование по вертикали */
-    height: 100%; /* Высота родительского элемента */
-    border: 1px solid #000; /* Для наглядности границы родительского элемента */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .cat{
