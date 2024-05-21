@@ -1,0 +1,91 @@
+body{
+    margin: 8px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    background-color: white;
+}
+
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100%; /* Высота родительского элемента */
+    border: 1px solid #000; /* Для наглядности границы родительского элемента */
+}
+
+.cat{
+    width: 100%;
+    height: 100%;
+}
+
+.square {
+    animation-name: squareAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes squareAnimation {
+    0% {
+        transform: scale(0) rotate(-5000deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+.gDota{
+    text-align: center; 
+    white-space: nowrap;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-contract-bck-top {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(400px) translateY(-300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+}
+
+.gDotaS{
+    text-align: center; 
+    white-space: nowrap;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+@keyframes tracking-in-contract-bck-bottom {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(400px) translateY(300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
